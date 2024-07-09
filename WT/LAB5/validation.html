@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        name: <input type="text" id="input name"/><br>
+        password: <input type="text" id="input password"/><br>
+        repassword: <input type="text" id="input re-password"/><br>
+        age: <input type="text" id="input age"/><br>
+        enrollment: <input type="text" id="input anrollment"/><br>
+        email: <input type="text" id="input email"/><br> 
+        <button type="submit" onclick="call()">submit</button>       
+    </form>
+
+    <script>
+        let name = document.getElementById('input name');
+        let password = document.getElementById('input password');
+        let repassword = document.getElementById('input repassword');
+        let age = document.getElementById('input age');
+        let enrollment = document.getElementById('input enrollment');
+        let email = document.getElementById('input email');
+        document.addEventListener('submit',(event)=>{
+            event.preventDefault()
+            call()
+        })
+
+
+        function call(){
+            if(name.value.length<8){
+                alert("short")
+            }
+            else if((password.valuelength>8) || (password.value.length<12)){
+                alert("enter valid password")
+            }
+
+
+        }
+        
+
+    </script>
+</body>
+</html>

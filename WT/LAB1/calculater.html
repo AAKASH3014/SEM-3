@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = prompt("enter first number");
+
+        b = prompt("enter secont number");
+
+        c = prompt("enter an valid sign (+,-,/,*)");
+
+        if(c=="+"){
+            document.write(`Sum=`)
+            document.write(parseInt(a)+parseInt(b));
+           
+        }
+       else if(c=="-"){
+           document.write(`sub=`)
+           document.write(parseInt(a)-parseInt(b));
+
+          
+       }
+       else if(c=="/"){
+           document.write(`div`)
+           document.write(parseInt(a)/parseInt(b));
+
+       }
+       else if(c=="*"){
+           document.write(`mul`)
+           document.write(parseInt(a)*parseInt(b));
+
+       }
+        
+        
+    </script>
+</body>
+</html>

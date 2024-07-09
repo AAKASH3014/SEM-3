@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a=[];
+        c=parseInt(prompt("enter number"));
+        for(i=0;i<c;i++){
+            b=parseInt(prompt("enter number"));
+            a.push(b);
+        }
+        d=a[0];
+        for(i=0;i<c;i++){
+            if(d<a[i+1]){
+                d=a[i+1];
+            }
+        }
+        document.write("number is",d);
+
+    </script>
+</body>
+</html>

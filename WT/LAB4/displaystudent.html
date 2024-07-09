@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        students =
+
+            [
+                {
+                    "createdAt": "2024-06-19T14:51:49.425Z",
+                    "name": "Gail Schoen",
+                    "phonenumber": "345.934.8074 x79004",
+                    "id": "1"
+                },
+                {
+                    "createdAt": "2024-06-19T09:12:08.619Z",
+                    "name": "Terrell Rempel",
+                    "phonenumber": "263.276.1383 x48586",
+                    "id": "2"
+                },
+                {
+                    "createdAt": "2024-06-19T10:03:30.727Z",
+                    "name": "Lora Farrell",
+                    "phonenumber": "996.431.8668 x9195",
+                    "id": "3"
+                },
+                {
+                    "createdAt": "2024-06-19T06:07:57.438Z",
+                    "name": "Boyd Doyle",
+                    "phonenumber": "(344) 306-9355 x3193",
+                    "id": "4"
+                },
+                {
+                    "createdAt": "2024-06-19T07:11:39.199Z",
+                    "name": "Nathan Goodwin",
+                    "phonenumber": "637.779.7572",
+                    "id": "5"
+                }
+            ]
+
+        document.write("<table border=1>");
+        for (i = 0; i < 5; i++) {
+            document.write("<tr>");
+            document.write("<td>");
+            document.write(students[i].name);
+            document.write("</td>");
+            
+            document.write("<td>");
+            document.write(students[i].id);
+            document.write("</td>");
+           
+            document.write("<td>");
+            document.write(students[i].phonenumber);
+            document.write("</td>");
+            document.write("</tr>");
+
+
+
+        }
+        document.write("<table border=1>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="background">
+    <button onclick="cli()">click</button>
+    <button onfocus="focu()">focus</button>
+    <button onmouseover="mouseover()" >mouseover</button>
+    <button onmouseout="mouseout()">mouseout</button>
+    <button onmouseleave="moul()">mouseleave</button> 
+</body>
+<script>
+        function cli(){
+            document.getElementById("background").style.backgroundColor="green"
+        }
+        function focu(){
+            document.getElementById("background").style.backgroundColor="blue"
+        }
+        function mouseover(){
+            document.getElementById("background").style.backgroundColor="black"
+        }
+        function mouseout(){
+            document.getElementById("background").style.backgroundColor="yellow"
+        }
+        function moul(){
+            document.getElementById("background").style.backgroundColor="orange"
+        }   
+</script>
+    
+</html>
